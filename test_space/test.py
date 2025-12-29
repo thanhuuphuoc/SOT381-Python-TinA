@@ -1,8 +1,9 @@
-bien_toan_cuc = 10
+def tinh_tong(*cac_so):
+    """Tính tổng nhiều số"""
+    tong = 0
+    for so in cac_so:
+        tong += so
+    return tong
 
-def ham_demo():
-    bien_cuc_bo = 5
-    print (f"Bien cuc bo: {bien_cuc_bo}")
-    print (f"Bien toan cuc: {bien_toan_cuc}")
-
-ham_demo()
+print(tinh_tong(1, 2, 3))        # 6
+print(tinh_tong(1, 2, 3, 4, 5))  # 15
